@@ -1,0 +1,17 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { FactsRoutingModule } from './facts-routing.module';
+import { FactsContainerComponent } from './components/facts-container/facts-container.component';
+
+
+@NgModule({
+  declarations: [
+    FactsContainerComponent
+  ],
+  imports: [
+    CommonModule,
+    FactsRoutingModule
+  ]
+})
+export class FactsModule { }

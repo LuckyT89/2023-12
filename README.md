@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Custom Notes by Tyler
+
+## Routing
+
+This app has two feature modules, calculator and facts. Each one has a routing module with a single path to navigate to the container component for that module.
+The only other path in this app is in the main app-routing.module.ts file which redirects the default path of '' to go to the calculator path, making the
+calculator module the default or landing page of the app.
+
+## To Do
+
+[ ] Move router links to header component
