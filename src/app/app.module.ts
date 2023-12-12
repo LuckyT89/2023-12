@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { CalculatorModule } from './feature-modules/calculator/calculator.module';
 import { FactsModule } from './feature-modules/facts/facts.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { FactsModule } from './feature-modules/facts/facts.module';
     FactsModule,
     AppRoutingModule,
     CoreModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
