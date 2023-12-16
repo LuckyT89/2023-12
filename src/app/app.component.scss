@@ -1,0 +1,11 @@
+/* The header should be a fixed size at the top, the footer a fixed size at the bottom, and the main section should
+fill the remaining space but will grow if it has more content and push the footer further down off screen until
+the user scrolls down and sees it. */
+div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}

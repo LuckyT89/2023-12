@@ -36,4 +36,8 @@ calculator module the default or landing page of the app.
 
 ## To Do
 
+[x] Use common color
+
 [ ] Move router links to header component
+[ ] Style links
+[ ] Hamburger menu for mobile
