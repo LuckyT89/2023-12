@@ -1,7 +1,18 @@
-<nav>
-  <div>
-    <a routerLink="/calculator">Calculator2</a>
-    <a routerLink="/facts">Facts2</a>
-  </div>
-  <h1>December 2023 App</h1>
-</nav>
+<div class="header-container">
+  <!-- Nav -->
+  <nav class="child-container">
+    <mat-icon>menu</mat-icon>
+    <a routerLink="/calculator" routerLinkActive="active"
+      ><div class="link-title">Calculator</div>
+      <div class="line"></div
+    ></a>
+    <a routerLink="/facts" routerLinkActive="active"
+      ><div class="link-title">Facts</div>
+      <div class="line"></div
+    ></a>
+  </nav>
+  <!-- Title -->
+  <h1 class="child-container">December 2023 App</h1>
+  <!-- Empty div so that there are three child items in the container so the app title can be easily centered -->
+  <div class="child-container"></div>
+</div>

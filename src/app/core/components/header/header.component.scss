@@ -1,12 +1,44 @@
-nav {
+.header-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--custom-yellow);
   height: 6em;
 }
+.child-container {
+  width: 30%;
+}
 
+// Each clickable link has two divs inside it- one for the text and one for the line under the text that animates when clicked on.
+a {
+  // Remove default link styling
+  text-decoration: inherit;
+  color: inherit;
+  //
+  font-size: 1.5em;
+  padding-left: 1em;
+  display: inline-block;
+}
+.active {
+  font-weight: bold;
+}
+.link-title {
+  margin-bottom: -10px;
+}
+.line {
+  display: inline-block;
+  width: 0px;
+  height: 2px;
+  background-color: black;
+}
+.active .line {
+  width: 100%;
+  transition: width 0.5s;
+}
+
+// App title
 h1 {
+  text-align: center;
   margin: 0;
   font-size: 2.5em;
   font-weight: bold;

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MatIconModule } from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
@@ -9,7 +10,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, MatSliderModule, MatSlideToggleModule],
-  exports: [MatSliderModule, MatSlideToggleModule],
+  imports: [CommonModule, MatIconModule, MatSliderModule, MatSlideToggleModule],
+  exports: [MatIconModule, MatSliderModule, MatSlideToggleModule],
 })
 export class SharedModule {}
