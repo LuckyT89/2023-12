@@ -9,6 +9,7 @@
   width: 30%;
 }
 
+// LINK ITEMS
 // Each clickable link has two divs inside it- one for the text and one for the line under the text that animates when clicked on.
 a {
   // Remove default link styling
@@ -35,11 +36,38 @@ a {
   width: 100%;
   transition: width 0.5s;
 }
+// END LINK ITEMS
 
-// App title
+// App title - used in both containers
 h1 {
   text-align: center;
   margin: 0;
   font-size: 2.5em;
   font-weight: bold;
+}
+
+// SMALL SCREEN HEADER ONLY
+.small-header-container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--custom-yellow);
+  height: 6em;
+}
+.small-child-container {
+  width: 10%;
+}
+.small-child-container-title {
+  width: 75%;
+}
+// END SMALL SCREEN HEADER ONLY
+
+// Media queries
+@media screen and (max-width: 700px) {
+  .header-container {
+    display: none;
+  }
+  .small-header-container {
+    display: flex;
+  }
 }

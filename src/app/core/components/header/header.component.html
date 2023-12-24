@@ -1,7 +1,7 @@
+<!-- Default header to display on larger screens -->
 <div class="header-container">
   <!-- Nav -->
   <nav class="child-container">
-    <mat-icon>menu</mat-icon>
     <a routerLink="/calculator" routerLinkActive="active"
       ><div class="link-title">Calculator</div>
       <div class="line"></div
@@ -11,8 +11,26 @@
       <div class="line"></div
     ></a>
   </nav>
+
   <!-- Title -->
   <h1 class="child-container">December 2023 App</h1>
+
   <!-- Empty div so that there are three child items in the container so the app title can be easily centered -->
   <div class="child-container"></div>
+</div>
+
+<!-- ------------------------------------------- -->
+
+<!-- Header to display only on smaller screens -->
+<div class="small-header-container">
+  <!-- Menu icon -->
+  <div class="small-child-container">
+    <mat-icon class="small-drop-down">menu</mat-icon>
+  </div>
+
+  <!-- Title -->
+  <h1 class="small-child-container-title">December 2023 App</h1>
+
+  <!-- Empty div so that there are three child items in the container so the app title can be easily centered -->
+  <div class="small-child-container"></div>
 </div>
